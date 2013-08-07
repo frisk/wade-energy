@@ -23,7 +23,7 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function(){
-          $("#firm_members, #led_lighting").click(function(){
+          $("#led_lighting").click(function(){
               alert('Page is in Progress... Come back soon!');
           });
         });
