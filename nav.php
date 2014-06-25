@@ -16,12 +16,12 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <?php 
-                  $nav_items = array('Home' => 'index.php', 'Company' => 'company.php', 'Firm Members' => 'firm.php', 'Title 24' => 'title24.php', 'LED Lighting' => 'led.php', 'Contact' => 'contact.php'); 
+                  $nav_items = array('Home' => 'index.php', 'About Us' => 'company.php', 'Team' => 'firm.php', 'Title 24' => 'title24.php', 'LEED' => 'leed.php', 'Energy Engineering' => 'energyEngineering.php', 'Contact' => 'contact.php'); 
                   foreach($nav_items as $title => $href)
                   {
                     //echo $_SERVER['REQUEST_URI'];
                 ?>
-                  <li <?php if($title == 'Firm Members' || $title == 'LED Lighting'){ echo 'id="'.strtolower(str_replace(' ', '_', $title)).'"'; } if($_SERVER['REQUEST_URI'] == '/'.$href){ echo 'class="active"'; } ?>><a href="<?= $href ?>"><?= $title ?></a></li>
+                  <li <?php if($title == 'Team' || $title == 'LED Lighting'){ echo 'id="'.strtolower(str_replace(' ', '_', $title)).'"'; } if($_SERVER['REQUEST_URI'] == '/'.$href){ echo 'class="active"'; } ?>><a href="<?= $href ?>"><?= $title ?></a></li>
               <?php
                   }
               ?>
